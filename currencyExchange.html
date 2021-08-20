@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moneyexchange</title>
+    <link rel="stylesheet" href="./css/style1.css">
+
+<body>
+    <tr>
+        <td>
+            <h1>Moneyexchange1</h1>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="">Ty gia</label>
+        </td>
+        <td>22000vnd/usd</td>
+    </tr>
+
+    <tr>
+        <td>Amount</td>
+        <td><input type="number" id="amount"></td>
+    </tr>
+    <tr>
+        <td>From</td>
+        <select name="from" id="from">
+            <option value="22000">vnd</option>
+            <option value="1">usd</option>
+        </select>
+    </tr>
+    <tr>
+        <td>to</td>
+        <select name="to" id="to">
+            <option value="22000">vnd</option>
+            <option value="1">usd</option>
+        </select>
+    </tr>
+    <br>
+    <button onclick="chuyentien()"">exchange</button>
+    <p id='result'></p>
+
+        <script src="./js/currencyExchange.js"></script>
+</body>
+
+</html>

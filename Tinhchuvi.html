@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinhCHUVI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        .box {
+            width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #000;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background: #fff;
+        }
+
+        .box input {
+            width: 100%;
+        }
+
+        .box .input-box {
+            margin: 10px 0;
+            display: flex;
+            justify-content: start;
+        }
+
+        .input-box>label {
+            width: 200px;
+        }
+
+        .input-box {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #exchange-result {
+            width: 100%;
+            min-height: 40px;
+            line-height: 40px;
+            background: palegreen;
+            border-radius: 4px;
+            color: #000;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box row">
+            <h3>Hình tròn</h3>
+            <div class="input-box">
+                <label for="r">Nhập bán kính R</label> <input type="number" id="r">
+            </div>
+            <a onclick="hinhtron()" class="btn btn-primary">Tính</a>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="./js/tinhchuvi.js"></script>
+</body>
+
+</html>

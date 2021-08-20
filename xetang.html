@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TANK</title>
+    <link rel="stylesheet" href="./css/tank.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div class="game-board">
+        <img src="image/pngtree-tank-icon-solid--vehicle-and-transportation-icon-stock-png-image_876634.jpg"
+            style="top: 40px; left: 40px;" alt="" class="icon-tank" id="tank">
+    </div>
+    <table>
+        <tr>
+            <td></td>
+            <td><button onclick="moveUp()"><i class="fas fa-arrow-up"></i></button></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><button onclick="moveLeft()"><i class="fas fa-arrow-left"></i></button></td>
+            <td></td>
+            <td><button onclick="moveRight()"><i class="fas fa-arrow-right"></i></button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button onclick="moveDown()"><i class="fas fa-arrow-down"></i></button></td>
+            <td></td>
+        </tr>
+    </table>
+    <script src="./js/xetang.js"></script>
+</body>
+
+</html>
